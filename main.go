@@ -1,5 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"example.com/bank/banks"
+
+	"github.com/Pallinder/go-randomdata"
+)
+
 func main() {
-	ProfitCalculator()
+	fmt.Println(randomdata.PhoneNumber())
+	banks.Bank()
 }
