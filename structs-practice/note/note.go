@@ -33,7 +33,7 @@ func (note Note) Display() {
 
 func (note Note) Save() error {
 	fileName := strings.ReplaceAll(note.Title, " ", "_")
-	fileName = strings.ToLower(fileName)
+	fileName = strings.ToLower(fileName) + ".json"
 
 	json, err := json.Marshal(note)
 	if err != nil {
